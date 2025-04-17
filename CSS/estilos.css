@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #222;
+  /*color: #222;*/
   padding-bottom: 50px;
   font-size: 14px;
 }
@@ -94,88 +94,56 @@ main {
   margin: 0 auto;
 }
 
-.presentacion {
-  background-color: #f5f5f5;
+.contenedor-textos {
+  /*background-color: #f5f5f5;*/
   padding: 30px 20px;
   text-align: center;
   color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-.presentacion h2 {
-  font-size: 20px;
+.textos h2 {
+  font-size: 1.5rem;
   margin-bottom: 15px;
+  color: #222;
 }
 
-.presentacion p {
+.textos h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.section-right h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.textos p {
   font-size: 14px;
   line-height: 1.4;
 }
 
-.contenedor-presentacion {
-  max-width: 900px;
-  margin: 0 auto;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.contenedor-presentacion h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-  color: #222;
-}
-
 footer {
-  background-color: #666;
-  color: #fff;
+  background-color: transparent;
+  color: #333;
   padding: 30px 0;
   font-size: 14px;
+  text-align: center;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 0 20px;
 }
 
-.footer-left,
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-left .logo img {
-  max-width: 120px;
-  height: auto;
-}
-
-.footer-left .contacta a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-left .contacta a:hover {
-  color: #c0392b;
-}
-
-.footer-right a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-right a:hover {
-  color: #c0392b;
-}
-
-footer p {
-  text-align: center;
-  margin: 20px 0 10px 0;
+.footer-line {
+  height: 4px;
+  width: 100%;
+  background-color: #c0392b;
+  margin-bottom: 20px;
 }
 
 .validadores {
@@ -194,6 +162,8 @@ footer p {
   justify-content: space-between;
   align-self: flex-start;
   gap: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding: 30 40px;
 }
 
@@ -220,12 +190,6 @@ footer p {
   padding-right: 20px;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.section-right h3 {
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  color: #222;
 }
 
 .section-right p {
