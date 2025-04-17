@@ -9,11 +9,12 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+  font-size: 14px;
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .nav {
@@ -94,10 +95,20 @@ main {
 }
 
 .presentacion {
-  background-color: #f4f4f4;
-  padding: 40px 20px;
+  background-color: #f5f5f5;
+  padding: 30px 20px;
   text-align: center;
   color: #333;
+}
+
+.presentacion h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.presentacion p {
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .contenedor-presentacion {
@@ -176,4 +187,49 @@ footer p {
   width: 40px;
   height: auto;
   margin: 0 5px;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  gap: 40px;
+  padding: 30 40px;
+}
+
+.section-left,
+.section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-left {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.section-left iframe {
+  width:100%;
+  height: 250px;
+  border:none;
+}
+
+.section-right {
+  flex: 1;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.section-right h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.section-right p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
 }
