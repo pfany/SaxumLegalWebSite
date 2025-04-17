@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Saxum Legal Services SL</title>
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+    <header>
+        <div class = "nav">
+            <div class = "logo">
+                <img src = "assets/logo_saxum.png" alt = "Logotipo de Saxum Legal Services"  />
+            </div>
+            <ul class = "menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="ubicacion.html">DÓNDE TRABAJAMOS</a></li>
+                <li><a href="contacto.html" class="activo">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="formulario-section">
+            <form id="contacto" aria-label="Formulario de contacto" role="form" autocomplete="on">
+                <h1>Formulario de contacto:</h1>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" autofocus name="nombre" placeholder="Ej: Ana Pérez García" required
+                        aria-required="true" <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Pérez García" required
+                        aria-required="true"
+                        pattern="^([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)*$" />
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ana@gmail.com" required />
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="tlfno" name="tlfno" placeholder="686124578" required aria-required="true"
+                        pattern="^\[6-7]d{8}$" />
+                </fieldset>
+                <fieldset>
+                    <legend>Preguntas</legend>
+                    <label>1. ¿Cuál es su tramo horario preferido?</label>
+                    <label><input type="radio" name="p1" value="mañanas" required />Mañanas: de 10:00 a 14:00 horas</label>
+                    <label><input type="radio" name="p1" value="tardes" />Tardes: de 16:00 a 19:00 horas</label>
+                    <label><input type="radio" name="p1" value="otros" />Otros (explicar en el apartado Comentarios)</label>
+                    
+                    <label>2. ¿Qué medio de contacto?</label>
+                    <label><input type="checkbox" name="p2" value="movil" />Teléfono</label>
+                    <label><input type="checkbox" name="p2" value="mail" />Email</label>
+                    <label><input type="checkbox" name="p2" value="indiferente" />Indiferente</label>   
+                    
+                    <label for="p3">3. Elija una de estas especialidades</label>
+                    <select name="p3" id="p3" required aria-required="true">
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="a">Empleados públicos</option>
+                        <option value="b">Derecho Laboral</option>
+                        <option value="c">Derecho Administrativo</option>
+                        <option value="d">Derecho de la Seguridad Social</option>
+                    </select>
+
+                    <label for="respuesta">4. Comentarios:</label>
+                        <textarea id="respuesta" name="respuesta" placeholder="Ej: solo tengo libres los martes por la tarde..." rows="4" maxlength="500"></textarea>
+                    
+                </fieldset>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="resumen-section" style="display: none;">
+            <h1>Datos aportados por el cliente:</h1>
+            <div id="resumen"></div><button onclick="window.location.reload()">Volver a editar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <p>&copy; 2025 Saxum Legal Services SL. Todos los derechos reservados.</p>
+            <div class="validadores">
+                <a href="https://validator.w3.org/" target="_blank"><img src="assets/html5.png" alt="HTML válido" /></a>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="assets/css3.png" alt="CSS válido" /></a>
+                <a href="https://jshint.com/" target="_blank"><img src="assets/js.png" alt="JavaScript válido" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
