@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 80px;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('../assets/inicio.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  filter: brightness(1.5); /* <- Aclara la imagen un 20% */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* oscurece ligeramente para mayor contraste del texto */
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.presentacion {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contenedor-presentacion {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.contenedor-presentacion h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #222;
+}
+
+footer {
+  background-color: #666;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-left .logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.footer-left .contacta a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-left .contacta a:hover {
+  color: #c0392b;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  color: #c0392b;
+}
+
+footer p {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.validadores {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.validadores img {
+  width: 40px;
+  height: auto;
+  margin: 0 5px;
+}
