@@ -1,41 +1,24 @@
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
-
-const img = document.querySelectorAll('#imgs img')
-
-let idx = 0
-
-let interval = setInterval(run, 2000)
-
-function run() {
-    idx++
-    changeImage()
-}
-
-function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if(idx < 0) {
-        idx = img.length - 1
+document.addEventListener('DOMContentLoaded', () => {
+    const imagenes = document.querySelectorAll('.carrusel-imagenes img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+  
+    let indiceActual = 0;
+  
+    function mostrarImagen(indice) {
+      imagenes.forEach((img, i) => {
+        img.classList.toggle('activo', i === indice);
+      });
     }
-
-    imgs.style.transform = `translateX(${-idx * 500}px)`
-}
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 2000)
-}
-
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-    resetInterval()
-})
-
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-    resetInterval()
-})
+  
+    prevBtn?.addEventListener('click', () => {
+      indiceActual = (indiceActual - 1 + imagenes.length) % imagenes.length;
+      mostrarImagen(indiceActual);
+    });
+  
+    nextBtn?.addEventListener('click', () => {
+      indiceActual = (indiceActual + 1) % imagenes.length;
+      mostrarImagen(indiceActual);
+    });
+  });
+  

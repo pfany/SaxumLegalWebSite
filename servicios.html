@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicios - Saxum legal Services SL</title>
+    <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-    
-    <section id ="servicios">
-        <h2>Servicios</h2>
-        <select>
-            <option>Selecciona un servicio</option>
-            <option>Estiba y asuntos marítimos</option>
-            <option>Derecho laboral</option>
-            <option>Fiscalidad</option>
-        </select>
-      </section>
-      <!--<div class = "carrusel">       
-            <div class="image-container" id="imgs">
-                <img src = "assets/photo1.jpg" alt = "Derecho marítimo"/>
-                <img src = "assets/contactando.jpg" alt = "Fiscalidad"/>
-                <img src = "assets/setup.webp" alt = "Administrativo"/>
-                <img src = "assets/briefing.webp" alt = "Laboral"/>
+    <header>
+        <div class = "nav">
+            <div class = "logo">
+                <img src = "assets/logo_saxum.png" alt = "Logotipo de Saxum Legal Services"  />
             </div>
-            <div class="buttons-container">
-                <button id="left" class="btn">Anterior</button>
-                <button id="right" class="btn">Siguiente</button>
+            <ul class = "menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html" class="activo">SERVICIOS</a></li>
+                <li><a href="ubicacion.html">DÓNDE TRABAJAMOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor-textos">
+            <div class="textos">
+                <h2>Nuestra responsabilidad</h2>
+                <p>En Saxum Legal Services trabajamos con profesionalidad, cercanía y rigor jurídico.</p>
+                <p>Nuestra experiencia abarca distintas ramas del derecho, ofreciendo soluciones integrales a nuestros clientes.</p>
+                <p>Creemos en la importancia de una comunicación clara y constante, adaptándonos a las necesidades de cada caso.</p>
             </div>
-        </div> -->
-
+        </section>
+        <section class="carrusel">
+            <button class="prev" aria-label="Imagen anterior">&#10094;</button>
+          
+            <div class="carrusel-imagenes">
+              <img src="assets/foto1contexto.jpg" class="activo" alt="Servicio 1">
+              <img src="assets/foto2contexto.jpg" alt="Servicio 2">
+              <img src="assets/foto3contexto.jpg" alt="Servicio 3">
+              <img src="assets/foto4contexto.jpg" alt="Servicio 4">
+            </div>
+          
+            <button class="next" aria-label="Imagen siguiente">&#10095;</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <p>&copy; 2025 Saxum Legal Services SL. Todos los derechos reservados.</p>
+            <div class="validadores">
+                <a href="https://validator.w3.org/" target="_blank"><img src="assets/html5.png" alt="HTML válido" /></a>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="assets/css3.png" alt="CSS válido" /></a>
+                <a href="https://jshint.com/" target="_blank"><img src="assets/js.png" alt="JavaScript válido" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/carrusel.js"></script>
 
 </body>
 </html>
+          
