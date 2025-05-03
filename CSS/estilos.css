@@ -17,7 +17,7 @@ main {
 }
 
 /* menú de navegación de header*/
-.nav {
+nav {
   position: fixed;
   background-color: white;
   top: 0;
@@ -30,8 +30,13 @@ main {
   z-index: 1000;
 }
 
+.logo { /* Estilo del contenedor del logo (enlace) */
+  display: flex; /* para que la imagen se centre bien */
+  align-items: center;  /*centra la imagen verticalmente */
+}
+
 .logo img {
-  height: 50px;
+  height: 50px; /* tamaño del logo */
 }
 
 .menu {
