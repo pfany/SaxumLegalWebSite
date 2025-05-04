@@ -23,30 +23,30 @@
     </header>
     <main>
         <section id="formulario-section">
-            <form id="contacto" aria-label="Formulario de contacto" role="form" autocomplete="on">
+            <form id="contacto" aria-label="Formulario de contacto" autocomplete="on">
                 <h1>Formulario de contacto:</h1>
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="nombre">Nombre completo:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Pérez García" required
-                        pattern="^([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)*$" />
+                        pattern="^([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)*$">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="ana@gmail.com" required />
+                    <input type="email" id="email" name="email" placeholder="ana@gmail.com" required>
                     <label for="telefono">Teléfono:</label>
-                    <input type="text" id="tlfno" name="tlfno" placeholder="686124578" required
-                        pattern="^[67]\d{8}$" />
+                    <input type="text" id="telefono" name="tlfno" placeholder="686124578" required
+                        pattern="^[67]\d{8}$">
                 </fieldset>
                 <fieldset>
                     <legend>Preguntas</legend>
                     <label>1. ¿Cuál es su tramo horario preferido?</label>
-                    <label><input type="radio" name="p1" value="mañanas" required />Mañanas: de 10:00 a 14:00 horas</label>
-                    <label><input type="radio" name="p1" value="tardes" />Tardes: de 16:00 a 19:00 horas</label>
-                    <label><input type="radio" name="p1" value="otros" />Otros (explicar en el apartado Comentarios)</label>
+                    <label><input type="radio" name="p1" value="mañanas" required>Mañanas: de 10:00 a 14:00 horas</label>
+                    <label><input type="radio" name="p1" value="tardes">Tardes: de 16:00 a 19:00 horas</label>
+                    <label><input type="radio" name="p1" value="otros">Otros (explicar en el apartado Comentarios)</label>
                     
                     <label>2. ¿Qué medio de contacto?</label>
-                    <label><input type="checkbox" name="p2" value="movil" />Teléfono</label>
-                    <label><input type="checkbox" name="p2" value="mail" />Email</label>
-                    <label><input type="checkbox" name="p2" value="indiferente" />Indiferente</label>   
+                    <label><input type="checkbox" name="p2" value="movil">Teléfono</label>
+                    <label><input type="checkbox" name="p2" value="mail">Email</label>
+                    <label><input type="checkbox" name="p2" value="indiferente">Indiferente</label>   
                     
                     <label for="p3">3. Elija una de estas especialidades</label>
                     <select name="p3" id="p3" required aria-required="true">
