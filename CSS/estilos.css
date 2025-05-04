@@ -154,22 +154,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.validadores {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.validadores img {
-  width: 40px;
-  height: auto;
-  margin: 0 5px;
-  transition: transform 0.3s ease;
-}
-
-.validades img:hover {
-  transform: scale(1.1);
-}
-
 /* estilo de la página Dónde trabajamos */
 .ubicacion {
   display: flex;
