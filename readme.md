@@ -20,16 +20,14 @@ El proyecto consiste en crear varias páginas enlazadas de forma que constituyan
 
 ## 📂 Estructura del proyecto
 
-- `index.html`: Página de inicio
-- `contacto.html`: Formulario de contacto
-- `ubicacion.html`: Mapa e información de contacto
-- `servicios.html`: Carrusel de especialidades legales
-- `estilos.css`: Hoja de estilos común para todas las páginas
-- `script.js`: Código JavaScript para funcionalidades del formulario en `contacto.html`.
-- `carrusel.js`: Código JavaScript para funcionalidades del carrusel en `servicios.html`.
-- `/assets`: Carpeta con imágenes y logo
+- `index.html`:  es la página de inicio. 
+- `contacto.html`:  incluye un formulario de contacto.
+- `ubicacion.html`: con un mapa de localización y dirección, mail y teléfono de contacto de la empresa.
+- `servicios.html`: para mostrar las materias legales en las que está especializado el bufete de abogados, se muestra un carrusel con diapositivas.
+- `estilos.css`: es la hoja de estilos, común para todas las páginas.
+- `script.js`: incluye el código JavaScript para el formulario de `contacto.html`.
+- `carrusel.js`: incluy el código JavaScript para el carrusel de `servicios.html`.
+- `/assets`: directorio con todas las imágenes y el logo de la empresa.
 
-## 👩‍💻 Notas
-
-En el proyecto se utilizaron apuntes e información de la clase de Lenguajes de Marcas de 1º de Daw y consultas a `google` y `chatgpt`.
+## 
 
